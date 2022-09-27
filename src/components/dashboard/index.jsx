@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Content from '../../common/template/content'
+import { Content } from '../../common/template/content'
 import { ContentHeader } from '../../common/template/contentHeader'
 
-export class DashBoard extends Component {
+class DashBoard extends Component {
     render() {
         return (
             <div>
@@ -12,3 +12,5 @@ export class DashBoard extends Component {
         )
     }
 }
+
+export default DashBoard
