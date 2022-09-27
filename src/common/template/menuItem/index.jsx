@@ -1,7 +1,12 @@
 import React from 'react'
 
-export function MenuItem() {
+export function MenuItem(props) {
   return (
-    <div>MenuItem</div>
+    <li>
+      <a href={props.path}>
+        <i className={`fa fa-${props.icon}`}></i>
+        {props.label}
+      </a>
+    </li>
   )
 }
