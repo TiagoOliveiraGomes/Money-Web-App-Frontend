@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Content } from '../../common/template/content'
+import { ContentHeader } from '../../common/template/contentHeader'
+import { Tabs } from '../../common/tab'
+import { TabsHeader } from '../../common/tab/tabsHeader'
+import { TabsContent } from '../../common/tab/tabsContent'
 
-export function BillingCycle() {
-  return (
-    <div>
-        <h1>Ciclo de Pagamento</h1>
-    </div>
-  )
+export default class BillingCycle extends Component {
+  render() {
+    return (
+      <div>
+        <ContentHeader title='Ciclos de Pagamentos' small='Cadastro' />
+        <Content>
+          <Tabs>
+            <TabsHeader></TabsHeader>
+            <TabsContent></TabsContent>
+          </Tabs>
+        </Content>
+      </div>
+    )
+  }
 }
