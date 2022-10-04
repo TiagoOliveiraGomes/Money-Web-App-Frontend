@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 import { Content } from '../../common/template/content'
 import { ContentHeader } from '../../common/template/contentHeader'
 import { Tabs } from '../../common/tab'
-import { TabsList } from '../../common/tab/tabsList'
-import { TabsContent } from '../../common/tab/tabsContent'
-import { TabHeaderConnect } from '../../common/tab/tabHeader'
+import { TabHeaderList } from '../../common/tab/tabHeaderList'
+import { TabContentList } from '../../common/tab/tabContentList'
+import { TabHeaderConnect as TabHeaderItem } from '../../common/tab/tabHeader'
+import { TabContentConnect as TabContent } from '../../common/tab/tabContent'
 
 export default class BillingCycle extends Component {
   render() {
@@ -13,13 +14,28 @@ export default class BillingCycle extends Component {
         <ContentHeader title='Ciclos de Pagamentos' small='Cadastro' />
         <Content>
           <Tabs>
-            <TabsList>
-              <TabHeaderConnect label='Listar' icon='bars' target='tabList' />
-              <TabHeaderConnect label='Incluir' icon='plus' target='tabCreate' />
-              <TabHeaderConnect label='Alterar' icon='pencil' target='tabUpdate' />
-              <TabHeaderConnect label='Excluir' icon='trash-o' target='tabDelete' />
-            </TabsList>
-            <TabsContent></TabsContent>
+            <TabHeaderList>
+              <TabHeaderItem label='Listar' icon='bars' target='tabList' />
+              <TabHeaderItem label='Incluir' icon='plus' target='tabCreate' />
+              <TabHeaderItem label='Alterar' icon='pencil' target='tabUpdate' />
+              <TabHeaderItem label='Excluir' icon='trash-o' target='tabDelete' />
+            </TabHeaderList>
+            <TabContentList>
+
+              <TabContent id='tabList'>
+                <h1>Lista</h1>
+              </TabContent>
+              <TabContent id='tabCreate'>
+                <h1>Incluir</h1>
+              </TabContent>
+              <TabContent id='tabUpdate'>
+                <h1>Alterar</h1>
+              </TabContent>
+              <TabContent id='tabDelete'>
+                <h1>Excluir</h1>
+              </TabContent>
+
+            </TabContentList>
           </Tabs>
         </Content>
       </div>

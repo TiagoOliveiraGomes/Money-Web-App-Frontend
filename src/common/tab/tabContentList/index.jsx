@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function TabsContent(props) {
+export function TabContentList(props) {
   return (
     <div className='tab-content'>
         {props.children}
