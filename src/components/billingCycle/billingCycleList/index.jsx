@@ -9,7 +9,7 @@ class BillingCycleList extends Component {
         this.props.getList()
     }
     render() {
-      console.log(this.props.list)
+      console.log("Props list: ", this.props.list)
     return (
       <div>
         <table className='table'>

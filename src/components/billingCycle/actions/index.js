@@ -1,9 +1,12 @@
-import axios from 'axios'
+import Axios from "axios"
+import { api } from "../../../service/api"
 
-const BASE_URL = 'http:localhost:3003/api'
+
+
 
 export function getList() {
-    const request = axios.get(`http:localhost:3003/api/billingCycles`)
+    
+    const request = api.get(`/billingCycles`)
     return {
         type: 'BILLING_CYCLES_FETCHED',
         payload: request
