@@ -1,4 +1,5 @@
 import React from 'react'
+import {Messages} from './common/msg/mensages'
 import './common/template/dependencies'
 import { Footer } from './common/template/footer'
 import { Header } from './common/template/header'
@@ -14,6 +15,7 @@ export function App() {
           <Routes />
         </div>
         <Footer />
+        <Messages />
     </div>
   )
 }
