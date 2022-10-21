@@ -1,8 +1,6 @@
 # Money-Web-App-Frontend
 # Design-System
 
-![image](https://user-images.githubusercontent.com/70171892/196523906-ae5925c6-2725-439f-a8e8-3f9fded3a09e.png)
-
 
 # <h2>💻 Projeto</h2>
 
