@@ -1,5 +1,4 @@
 # Money-Web-App-Frontend
-# Design-System
 
 
 # <h2>💻 Projeto</h2>
