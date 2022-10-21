@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { reduxForm, Field } from 'redux-form'
-import {LabelAndInput} from '../../form/LabelAndInput'
+import LabelAndInput from '../../form/LabelAndInput'
 
 class Form extends Component {
   render() {

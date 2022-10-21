@@ -1,7 +1,7 @@
 import React from "react"
 import Grid from "../../../common/layout/grid"
 
-export function LabelAndInput(props) {
+export default props => {
   return (
     <Grid cols={props.cols}>
       <div className="form-group">
@@ -9,11 +9,11 @@ export function LabelAndInput(props) {
         <input
           {...props.input}
           type="text"
-        //   className="form-control"
-        //   title="asdasd"
-        //   name="asdasd"
-        //   placeholder="{props.placeholder}"
-        //   readOnly={props.readOnly}
+          className="form-control"
+          title="asdasd"
+          name="asdasd"
+          placeholder="{props.placeholder}"
+          readOnly={props.readOnly}
         />
       </div>
     </Grid>
