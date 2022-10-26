@@ -56,5 +56,7 @@ class BillingCycle extends Component {
 }
 
 const mapDispatchToProps = dispatch => bindActionCreators({selectTab, showTabs, create}, dispatch)
+// export default connect(null, mapDispatchToProps)(BillingCycle)
 const BillingCycleConnect = connect(null, mapDispatchToProps)(BillingCycle)
-export {BillingCycleConnect}
+export default BillingCycleConnect
+// export {BillingCycleConnect}
