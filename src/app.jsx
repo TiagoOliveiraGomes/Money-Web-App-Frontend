@@ -1,18 +1,18 @@
 import React from 'react'
-import {Messages} from './common/msg/mensages'
 import './common/template/dependencies'
-import { Footer } from './common/template/footer'
+
 import { Header } from './common/template/header'
 import { Sidebar } from './common/template/sidebar'
-import { Routes } from './routes/routes'
+import { Footer } from './common/template/footer'
+import { Messages } from './common/msg/mensages'
 
-export function App() {
+export default function App(props) {
   return (
     <div className='wrapper'>
         <Header />
         <Sidebar />
         <div className='content-wrapper'>
-          <Routes />
+          {props.children}
         </div>
         <Footer />
         <Messages />

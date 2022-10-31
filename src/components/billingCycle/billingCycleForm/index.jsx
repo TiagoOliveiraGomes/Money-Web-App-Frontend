@@ -21,5 +21,4 @@ class Form extends Component {
   }
 }
 
-const BillingCycleForm = reduxForm({form: 'billingCycleForm'})(Form)
-export {BillingCycleForm}
+export default reduxForm({form: 'billingCycleForm'})(Form)
