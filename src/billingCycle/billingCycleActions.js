@@ -30,7 +30,7 @@ export function remove(values) {
 function submit(values, method) {
     return dispatch => {
         const id = values._id ? values._id : ''
-        axios[method](`${BASE_URL}/billingCycles/${id}`, values)
+        axios[method](`${BASE_URL}/billingcycles/${id}`, values)
             .then(resp => {
                 toastr.success('Sucesso', 'Operação Realizada com sucesso.')
                 dispatch(init())
