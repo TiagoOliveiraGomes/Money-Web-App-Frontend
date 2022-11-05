@@ -3,8 +3,9 @@ import React, { Component } from "react";
 import axios from "axios";
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+
 import App from "./app";
-import Auth from "../auth/auth";
+import Auth from "../auth";
 import { validateToken } from "../auth/authActions";
 
 class AuthOrApp extends Component {
@@ -26,6 +27,5 @@ class AuthOrApp extends Component {
   }
 }
 const mapStateToProps = (state) => ({ auth: state.auth });
-const mapDispatchToProps = (dispatch) =>
-  bindActionCreators({ validateToken }, dispatch);
+const mapDispatchToProps = (dispatch) => bindActionCreators({ validateToken }, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(AuthOrApp);
